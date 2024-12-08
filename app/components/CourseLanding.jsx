@@ -68,7 +68,7 @@ export default function CourseLanding() {
         {/* Schedule Section */}
         <div className="bg-white rounded-2xl p-8 space-y-6 shadow-lg mt-12">
           <div className="space-y-6">
-            <div className="flex items-center justify-between w-full  p-4 bg-[#F9FAFB] rounded-xl">
+            <div className="flex flex-wrap items-center sm:justify-between justify-center w-full  p-4 bg-[#F9FAFB] rounded-xl">
               <div className="flex items-center gap-3">
                 <Calendar className="w-5 h-5 font-medium text-blue-600" />
                 <div className="space-y-1">
