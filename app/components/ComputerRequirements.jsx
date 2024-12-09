@@ -5,7 +5,7 @@ export default function ComputerRequirements() {
   const requirements = [
     {
       icon: "/laptop.png",
-      title: "ল্যাপটপ/ডেস্কটপ (মিনিমাম ৮ জিবি র্যাম)",
+      title: "একটি ল্যাপটপ বা পিসি",
     },
     {
       icon: "/freelance.png",
@@ -15,13 +15,22 @@ export default function ComputerRequirements() {
       icon: "/programming.png",
       title: "প্রোগ্রামিং ফান্ডামেন্টালস জানা থাকলে ভালো",
     },
+    // {
+    //   icon: "/technology.png",
+    //   title: "মিনিমাম Core i3 প্রসেসর",
+    // },
+    // {
+    //   icon: "/ssd.png",
+    //   title: "২৫৬ জিবি এসএসডি",
+    // },
     {
-      icon: "/technology.png",
-      title: "মিনিমাম Core i3 প্রসেসর",
+      icon: "/career.png",
+      title: "ক্যারিয়ার ফোকাসড",
     },
+
     {
-      icon: "/ssd.png",
-      title: "২৫৬ জিবি এসএসডি",
+      icon: "/bachelor.png",
+      title: "স্নাতক অধ্যয়নরত বা স্নাতক পাশ",
     },
     {
       icon: "/perseverance.png",
@@ -31,9 +40,7 @@ export default function ComputerRequirements() {
 
   return (
     <div className="w-full max-w-7xl mx-auto px-4 py-16">
-      <h1
-        className={`text-4xl font-bold text-center mb-12 ${hindSiliguri.className}`}
-      >
+      <h1 className={`text-4xl font-bold text-center mb-12 ${hindSiliguri.className}`}>
         কী কী{" "}
         <span className=" relative">
           থাকতে
@@ -51,19 +58,9 @@ export default function ComputerRequirements() {
             className="p-6 bg-gray-100  rounded-lg"
           >
             <div className="bg-white p-2 rounded-lg inline-block">
-              <Image
-                className=""
-                src={requirement.icon}
-                alt=""
-                width={64}
-                height={64}
-              />
+              <Image className="" src={requirement.icon} alt="" width={64} height={64} />
             </div>
-            <h2
-              className={`text-lg font-medium text-gray-800 ${hindSiliguri.className}`}
-            >
-              {requirement.title}
-            </h2>
+            <h2 className={`text-lg font-medium text-gray-800 ${hindSiliguri.className}`}>{requirement.title}</h2>
           </div>
         ))}
       </div>

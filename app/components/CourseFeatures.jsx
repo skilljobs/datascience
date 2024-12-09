@@ -4,7 +4,7 @@ import { hindSiliguri } from "../layout";
 const features = [
   {
     icon: "/ben/৪ মাসের স্টাডিপ্ল্যান.png",
-    title: "৪ মাসের স্টাডিপ্ল্যান",
+    title: "১০৫ দিনের স্টাডি প্ল্যান ",
     description: "একদম বিগিনার লেভেল থেরেই আপডেটেড কারিকুলাম",
   },
   {
@@ -15,8 +15,7 @@ const features = [
   {
     icon: "/ben/রিয়েল লাইফ প্রজেক্ট.png",
     title: "৪ টি রিয়েল লাইফ প্রজেক্ট",
-    description:
-      "ইন্ডাস্ট্রি স্ট্যান্ডার্ড প্রজেক্ট এড করুন পিডিএফ, এক্সেল সবার চেয়ে এগিয়ে",
+    description: "ইন্ডাস্ট্রি স্ট্যান্ডার্ড প্রজেক্ট এড করুন পিডিএফ, এক্সেল সবার চেয়ে এগিয়ে",
   },
   {
     icon: "/ben/প্রোগ্রেস ট্র্যাকিং.png",
@@ -25,7 +24,7 @@ const features = [
   },
   {
     icon: "/ben/সাপোর্ট ক্লাস.png",
-    title: "উইকলি ২ দিন সাপোর্ট ক্লাস",
+    title: "২৪/৭  সাপোর্ট",
     description: "প্র্যাক্টিস করতে গিয়ে পাবেন লাইভ সাপোর্ট",
   },
   {
@@ -33,17 +32,32 @@ const features = [
     title: "কমিউনিটি সাপোর্ট",
     description: "থাকুন প্রোগ্রামিং কমিউনিটির সাথে অলটাইমস",
   },
+  // new
+  {
+    icon: "/ben/live-support.png",
+    title: "ডেডিকেটেড ২৪/৭ সাপোর্ট",
+    description: "ডেডিকেটেড ২৪/৭ সাপোর্ট অলটাইমস",
+  },
   {
     icon: "/ben/লাইফটাইম এক্সেস.png",
     title: "লাইফটাইম এক্সেস",
-    description:
-      "প্রিরেকর্ডেড ভিডিও, রিসোর্স এবং ক্লাস রেকর্ডস এ থাকবে লাইফ টাইম এক্সেস",
+    description: "প্রিরেকর্ডেড ভিডিও, রিসোর্স এবং ক্লাস রেকর্ডস এ থাকবে লাইফ টাইম এক্সেস",
+  },
+  {
+    icon: "/ben/coding.png",
+    title: "ফ্রী ৩টি ফাউন্ডেশন ক্লাস ",
+    description: "কোডিং নলেজ যাদের নেই , ফ্রী ৩টি ফাউন্ডেশন ক্লাস",
+  },
+  // 2nd
+  {
+    icon: "/ben/opportunity.png",
+    title: "ইন্টার্নশীপ অপরচুনিটি",
+    description: "ইন্ডাস্ট্রি এক্সপার্টদের কাছে পান জব মার্কেট ব্রেক করার পূর্ণাঙ্গ নির্দেশনা",
   },
   {
     icon: "/ben/জব মার্কেট গাইডলাইন.png",
     title: "জব মার্কেট গাইডলাইন",
-    description:
-      "ইন্ডাস্ট্রি এক্সপার্টদের কাছে পান জব মার্কেট ব্রেক করার পূর্ণাঙ্গ নির্দেশনা",
+    description: "ইন্ডাস্ট্রি এক্সপার্টদের কাছে পান জব মার্কেট ব্রেক করার পূর্ণাঙ্গ নির্দেশনা",
   },
   {
     icon: "/ben/মার্কেটপ্লেস গাইডলাইন.png",
@@ -53,8 +67,7 @@ const features = [
   {
     icon: "/ben/সার্টিফিকেট.png",
     title: "সার্টিফিকেট",
-    description:
-      "কোর্স শেষ করে পাবেন সেয়ারেবল কোর্স কমপ্লিশন এবং এসেসমেন্ট সার্টিফিকেট",
+    description: "কোর্স শেষ করে পাবেন সেয়ারেবল কোর্স কমপ্লিশন এবং এসেসমেন্ট সার্টিফিকেট",
   },
 ];
 
@@ -69,19 +82,9 @@ export default function CourseFeatures() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  ">
           {features.map((feature, index) => (
-            <div
-              key={index}
-              className={`border-r border-b flex flex-col items-center text-center p-6 bg-white rounded-lg  border-l border-gray-200 hover:shadow-md transition-shadow duration-300 relative  after:bg-gray-200 ${
-                index === features.length - 1 ? "md:border-r-0" : "md:border-r"
-              } `}
-            >
+            <div key={index} className={`border-r border-b flex flex-col items-center text-center p-6 bg-white rounded-lg  border-l border-gray-200 hover:shadow-md transition-shadow duration-300 relative  after:bg-gray-200 ${index === features.length - 1 ? "md:border-r-0" : "md:border-r"} `}>
               <div className="w-16 h-16 mb-4 relative">
-                <Image
-                  src={feature.icon}
-                  alt=""
-                  layout="fill"
-                  objectFit="contain"
-                />
+                <Image src={feature.icon} alt="" layout="fill" objectFit="contain" />
               </div>
               <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
               <p className="text-gray-600 text-sm">{feature.description}</p>

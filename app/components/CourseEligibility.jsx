@@ -14,22 +14,18 @@ const eligibilityPoints = [
   {
     text: "জবে আছেন এবং যারা চাচ্ছেন ডাটা সায়েন্স সেক্টরে ক্যারিয়ার সুইচ করতে",
   },
+  {
+    text: "ফ্রীল্যান্সার হিসেবে কাজ করতে পারবেন",
+  },
 ];
 
 export default function CourseEligibility() {
   return (
-    <section
-      className={`w-full max-w-7xl mx-auto px-4 py-16 ${hindSiliguri.className}`}
-    >
-      <h2 className="text-3xl font-bold text-center mb-12">
-        কোর্সটি আপনারই জন্য
-      </h2>
+    <section className={`w-full max-w-7xl mx-auto px-4 py-16 ${hindSiliguri.className}`}>
+      <h2 className="text-3xl font-bold text-center mb-12">কোর্সটি আপনারই জন্য</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {eligibilityPoints.map((point, index) => (
-          <div
-            key={index}
-            className="flex items-start gap-3 shadow-lg py-2 px-2"
-          >
+          <div key={index} className="flex items-start gap-3 shadow-lg py-2 px-2">
             <CheckCircle2 className="w-6 h-6 text-green-500 flex-shrink-0 mt-1" />
             <p className="text-lg">{point.text}</p>
           </div>

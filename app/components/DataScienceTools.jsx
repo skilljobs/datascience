@@ -43,34 +43,28 @@ export default function DataScienceTools() {
       description: "Machine Learning Framework",
       image: "/tools/888.png",
     },
+    // one div space then left of them
     {
       name: "Seaborn",
       description: "Statistical Visualization",
       image: "/tools/999.png",
     },
+    {
+      name: "Keras",
+      description: "Deep Learning Library",
+      image: "/tools/keras-logo.png",
+    },
   ];
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-8">
-      <h1
-        className={`text-3xl font-bold text-center mb-8 ${hindSiliguri.className}`}
-      >
-        যেসব ট্যুলস ও টেকনোলোজি শিখবেন
-      </h1>
+      {/* <h1 className={`text-3xl font-bold text-center mb-8 ${hindSiliguri.className}`}>যেসব ট্যুলস ও টেকনোলোজি শিখবেন</h1> */}
+      <h1 className={`text-3xl font-bold text-center mb-8 ${hindSiliguri.className}`}>টুলস এবং লাইব্রেরি</h1>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {tools.map((tool, index) => (
-          <div
-            key={index}
-            className="bg-gray-200 p-4 h-max rounded-lg shadow hover:shadow-lg transition-shadow"
-          >
+          <div key={index} className={`${index === tools.length - 2 ? " col-start-2	" : ""} bg-gray-200 p-4 h-max rounded-lg shadow hover:shadow-lg transition-shadow`}>
             <div className="flex flex-col items-center">
-              <Image
-                width={32}
-                height={32}
-                src={tool.image}
-                alt={`${tool.name} logo`}
-                className="object-contain mb-4"
-              />
+              <Image width={32} height={32} src={tool.image} alt={`${tool.name} logo`} className="object-contain mb-4" />
               <h2 className="text-sm font-semibold text-center">{tool.name}</h2>
             </div>
           </div>
