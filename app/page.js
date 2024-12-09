@@ -8,18 +8,21 @@ import CourseLanding from "./components/CourseLanding";
 import DataFAQSection from "./components/DataFAQSection";
 import DataScienceTools from "./components/DataScienceTools";
 import FAQSection from "./components/FAQSection";
+import { Footer } from "./components/Footer";
 import GraduateGallery from "./components/GraduateGallery";
 import HeroSection from "./components/HeroSection";
 import InstructorCard from "./components/InstructorCard";
 import MainBanner from "./components/MainBanner";
+import { Navbar } from "./components/Navbar";
 import StickyEnrollButton from "./components/StickyEnrollButton";
 import TestimonialCarousel from "./components/TestimonialCarousel";
 
 export default function Home() {
   return (
     <main className="">
+      <Navbar />
+      <MainBanner />
       <main className="relative" id="main">
-        <MainBanner />
         <HeroSection />
         <CourseLanding />
         <div className="my-16">
@@ -67,6 +70,9 @@ export default function Home() {
       </div>
       <div className="mb-16">
         <GraduateGallery />
+      </div>
+      <div>
+        <Footer />
       </div>
     </main>
   );
