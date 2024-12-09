@@ -96,7 +96,7 @@ export default function GraduateGallery() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-16">
-      <h1 className="text-4xl font-bold text-center mb-8">Our Latest Graduates</h1>
+      <h1 className="text-4xl font-bold text-center mb-8">Graduated Students From Our Latest Batch</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {graduateList.map((graduate, index) => (
           <GraduateCard key={graduate.id} graduate={graduate} onClick={() => setSelectedIndex(index)} />
