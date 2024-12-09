@@ -35,12 +35,12 @@ export function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 z-50 w-full bg-white shadow-md">
-      <div className="container mx-auto px-4">
+    <nav className="fixed top-0 z-50 w-full bg-white shadow-md ">
+      <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0">
-              <Image src="/daffodilgrouppng.png" width={300} height={100} alt="Daffodil Group" className="rounded-lg" />
+              <Image src="/daffodilgroup.png" width={210} height={100} alt="Daffodil Group" className="rounded-lg" />
             </Link>
           </div>
           <div className="hidden md:block">
@@ -74,7 +74,7 @@ export function Navbar() {
           <div className="md:hidden">
             <Button variant="ghost" onClick={toggleSidebar}>
               <span className="sr-only">Open main menu</span>
-              <Menu className="h-6 w-6 text-blue-600" aria-hidden="true" />
+              <Menu className="!size-10 text-blue-600" aria-hidden="true" />
             </Button>
           </div>
         </div>
@@ -90,10 +90,10 @@ export function Navbar() {
           <div className="p-4">
             <div className="flex justify-between items-center mb-8">
               <Link href="/" className="flex-shrink-0">
-                <span className="text-2xl font-bold text-blue-600">Logo</span>
+                <Image src="/daffodilgroup.png" width={130} height={100} alt="Daffodil Group" className="rounded-lg" />
               </Link>
               <Button variant="ghost" onClick={toggleSidebar}>
-                <X className="h-6 w-6 text-blue-600" aria-hidden="true" />
+                <X className="!size-10  text-blue-600" aria-hidden="true" />
               </Button>
             </div>
             <div className="space-y-4">

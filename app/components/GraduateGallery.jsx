@@ -95,7 +95,7 @@ export default function GraduateGallery() {
   }, []);
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="max-w-7xl mx-auto px-4 py-16">
       <h1 className="text-4xl font-bold text-center mb-8">Our Latest Graduates</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {graduateList.map((graduate, index) => (
@@ -121,7 +121,7 @@ function Lightbox({ graduate, onClose, onNavigate }) {
       <motion.div className="relative max-w-4xl w-full h-full flex items-center justify-center" initial={{ scale: 0.9 }} animate={{ scale: 1 }} exit={{ scale: 0.9 }} onClick={(e) => e.stopPropagation()}>
         <Image src={graduate.src} alt={`Graduate ${graduate.id}`} width={1200} height={800} className="max-w-full max-h-full object-contain" />
         <motion.button className="absolute top-4 right-4 text-white" onClick={onClose} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-          <X size={24} />
+          <X size={48} className="text-blue-600" />
         </motion.button>
         <motion.button className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white" onClick={() => onNavigate("prev")} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
           <ChevronLeft size={40} />
