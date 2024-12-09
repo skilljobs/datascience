@@ -5,8 +5,10 @@ import CourseDescription from "./components/CourseDescription";
 import CourseEligibility from "./components/CourseEligibility";
 import CourseFeatures from "./components/CourseFeatures";
 import CourseLanding from "./components/CourseLanding";
+import DataFAQSection from "./components/DataFAQSection";
 import DataScienceTools from "./components/DataScienceTools";
 import FAQSection from "./components/FAQSection";
+import GraduateGallery from "./components/GraduateGallery";
 import HeroSection from "./components/HeroSection";
 import InstructorCard from "./components/InstructorCard";
 import MainBanner from "./components/MainBanner";
@@ -55,10 +57,16 @@ export default function Home() {
       </main>
 
       <div className="mb-16">
+        <DataFAQSection />
+      </div>
+      <div className="mb-16">
         <FAQSection />
       </div>
       <div className="mb-16">
         <TestimonialCarousel />
+      </div>
+      <div className="mb-16">
+        <GraduateGallery />
       </div>
     </main>
   );

@@ -50,14 +50,14 @@ const faqData = [
 export default function FAQSection() {
   return (
     <div className={`w-full max-w-7xl mx-auto px-4 py-16 ${hindSiliguri.className}`}>
-      <h2 className={`text-3xl font-bold mb-8 text-center ${hindSiliguri.className}`}>
+      <h2 className={`text-4xl font-bold mb-8 text-center ${hindSiliguri.className}`}>
         প্রায়ই জিজ্ঞেস করা <span className="">প্রশ্ন</span>
       </h2>
       <Accordion type="single" collapsible className="w-full space-y-4">
         {faqData.map((faq, index) => (
           <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg px-6 py-2">
-            <AccordionTrigger className="text-lg font-bold hover:no-underline">{`${index + 1}. ${faq.question}`}</AccordionTrigger>
-            <AccordionContent className="text-base text-gray-600">{faq.answer}</AccordionContent>
+            <AccordionTrigger className="text-xl font-bold hover:no-underline">{`${index + 1}. ${faq.question}`}</AccordionTrigger>
+            <AccordionContent className="text-lg text-gray-600">{faq.answer}</AccordionContent>
           </AccordionItem>
         ))}
       </Accordion>
