@@ -4,6 +4,7 @@ export default function CourseLanding() {
   return (
     <div className="flex flex-col items-center justify-center w-full max-w-7xl mx-auto px-4 py-16">
       {/* Header Section */}
+      <h1 className="text-4xl font-bold mb-8 text-center">Course Summary</h1>
       <div className=" hidden text-center mb-8 max-w-3xl mx-auto">
         <div className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-blue-50 text-blue-600 text-sm font-medium mb-10 hover:bg-blue-100 transition-colors cursor-pointer">
           <span>
@@ -24,10 +25,13 @@ export default function CourseLanding() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
           {[
             { number: "৩৫ টি", label: "লাইভ ক্লাস" },
-            { number: "৭৫", label: "ঘন্টা" },
+            { number: "৭৫", label: "ঘন্টা লার্নিং ক্লাস" },
             { number: "∞", label: "লাইফটাইম ক্লাস রেকর্ডিং অ্যাক্সেস" },
             { number: "🎓", label: "ইন্টার্নশীপ প্লেসমেন্ট সাপোর্ট " },
             { number: "✓", label: "জব প্লেসমেন্ট সাপোর্ট" },
+            { number: "💪", label: "হ্যান্ডস-অন প্রজেক্ট" },
+            { number: "⚒️", label: "ইন্ডাস্ট্রি-রিলেভেন্ট টুলস" },
+            { number: "📝", label: "সম্পূর্ণ কারিকুলাম" },
           ].map((stat, i) => (
             <div key={i} className="bg-white rounded-2xl border  border-blue-600 h-max p-px text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
               <div className={`${i === 0 && "py-2"} text-3xl font-bold  bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent  ${hindSiliguri.className}`}>{stat.number}</div>
@@ -39,12 +43,12 @@ export default function CourseLanding() {
         {/* Schedule Section */}
         <div className="bg-white rounded-2xl p-8 space-y-6 shadow-lg mt-12">
           <div className="space-y-6">
-            <div className="flex flex-wrap items-center md:justify-between gap-y-5 w-full  p-4 bg-[#F9FAFB] rounded-xl">
+            <div className="flex flex-wrap items-center md:justify-between gap-y-5 gap-x-2 w-full  p-4 bg-[#F9FAFB] rounded-xl">
               <div className="flex items-center gap-3">
                 <Calendar className="w-5 h-5 font-medium text-blue-600" />
                 <div className="space-y-1">
                   <div className={`text-lg text-blue-600 font-bold ${hindSiliguri.className}`}>কোর্সটি শুরু:</div>
-                  <div className="font-medium">১৫ জানুয়ারি, ২০২৫ ইং</div>
+                  <div className="font-medium">২৫ জানুয়ারি, ২০২৫ ইং</div>
                 </div>
               </div>
               <div className="w-[2px]  h-10 hidden lg:block bg-gray-200"></div>

@@ -62,7 +62,7 @@ export default function DataScienceTools() {
       <h1 className={`text-3xl font-bold text-center mb-8 ${hindSiliguri.className}`}>টুলস এবং লাইব্রেরি</h1>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {tools.map((tool, index) => (
-          <div key={index} className={`${index === tools.length - 2 ? " col-start-2	" : ""} bg-gray-200 p-4 h-max rounded-lg shadow hover:shadow-lg transition-shadow`}>
+          <div key={index} className={`${index === tools.length - 2 ? " lg:col-start-2	" : ""} bg-gray-200 p-4 h-max rounded-lg shadow hover:shadow-lg transition-shadow`}>
             <div className="flex flex-col items-center">
               <Image width={32} height={32} src={tool.image} alt={`${tool.name} logo`} className="object-contain mb-4" />
               <h2 className="text-sm font-semibold text-center">{tool.name}</h2>

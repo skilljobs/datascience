@@ -40,7 +40,7 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0">
-              <Image src="/daffodilgroup.png" width={210} height={100} alt="Daffodil Group" className="rounded-lg" />
+              <Image src="/Skill.jobs_.png" width={210} height={100} alt="Daffodil Group" className="rounded-lg" />
             </Link>
           </div>
           <div className="hidden md:block">
@@ -90,7 +90,7 @@ export function Navbar() {
           <div className="p-4">
             <div className="flex justify-between items-center mb-8">
               <Link href="/" className="flex-shrink-0">
-                <Image src="/daffodilgroup.png" width={130} height={100} alt="Daffodil Group" className="rounded-lg" />
+                <Image src="/Skill.jobs_.png" width={130} height={100} alt="Daffodil Group" className="rounded-lg" />
               </Link>
               <Button variant="ghost" onClick={toggleSidebar}>
                 <X className="!size-10  text-blue-600" aria-hidden="true" />

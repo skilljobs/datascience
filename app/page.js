@@ -7,7 +7,6 @@ import CourseFeatures from "./components/CourseFeatures";
 import CourseLanding from "./components/CourseLanding";
 import DataFAQSection from "./components/DataFAQSection";
 import DataScienceTools from "./components/DataScienceTools";
-import FAQSection from "./components/FAQSection";
 import { Footer } from "./components/Footer";
 import GraduateGallery from "./components/GraduateGallery";
 import HeroSection from "./components/HeroSection";
@@ -59,12 +58,10 @@ export default function Home() {
         </div>
       </main>
 
-      <div className="mb-16">
+      <div className="mb-16 flex">
         <DataFAQSection />
       </div>
-      <div className="mb-16">
-        <FAQSection />
-      </div>
+      <div></div>
       <div className="mb-16">
         <TestimonialCarousel />
       </div>

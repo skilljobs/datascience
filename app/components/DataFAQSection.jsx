@@ -3,6 +3,7 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Hind_Siliguri } from "next/font/google";
 import Link from "next/link";
+import FAQSection from "./FAQSection";
 
 const hindSiliguri = Hind_Siliguri({
   subsets: ["latin"],
@@ -116,6 +117,7 @@ export default function DataFAQSection() {
           </AccordionItem>
         ))}
       </Accordion>
+      <FAQSection />
     </div>
   );
 }
