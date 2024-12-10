@@ -34,7 +34,7 @@ export function Footer() {
           {/* Brand Section */}
           <div className="space-y-4">
             <Link href="/" className="inline-block">
-              <Image src="/daffodilgroup.jpg" width={300} height={100} alt="Daffodil Group" className="rounded-lg" />
+              <Image src="/logo.png" width={300} height={100} alt="Daffodil Group" className="rounded-lg" />
             </Link>
             <p className="text-slate-400">Daffodil Learning - a leading job application site and online career portal in Bangladesh</p>
           </div>

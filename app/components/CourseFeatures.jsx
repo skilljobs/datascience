@@ -52,7 +52,7 @@ const features = [
   {
     icon: "/ben/opportunity.png",
     title: "ইন্টার্নশীপ অপরচুনিটি",
-    description: "ইন্ডাস্ট্রি এক্সপার্টদের কাছে পান জব মার্কেট ব্রেক করার পূর্ণাঙ্গ নির্দেশনা",
+    description: "কোর্সে ভালো করলে পাবেন ইন্টার্নশীপের সুযোগ।",
   },
   {
     icon: "/ben/জব মার্কেট গাইডলাইন.png",
@@ -82,7 +82,7 @@ export default function CourseFeatures() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  ">
           {features.map((feature, index) => (
-            <div key={index} className={`border-r border-b flex flex-col items-center text-center p-6 bg-white rounded-lg  border-l border-gray-200 hover:shadow-md transition-shadow duration-300 relative  after:bg-gray-200  ${index === features.length - 1 ? "md:border-r-0 col-start-2" : "md:border-r"} `}>
+            <div key={index} className={`border-r border-b flex flex-col items-center text-center p-6 bg-white rounded-lg  border-l border-gray-200 hover:shadow-md transition-shadow duration-300 relative  after:bg-gray-200  ${index === features.length - 1 ? "md:border-r-0 lg:col-start-2" : "md:border-r"} `}>
               <div className="w-16 h-16 mb-4 relative">
                 <Image src={feature.icon} alt="" layout="fill" objectFit="contain" />
               </div>

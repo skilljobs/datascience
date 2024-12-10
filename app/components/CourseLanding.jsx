@@ -39,7 +39,7 @@ export default function CourseLanding() {
         {/* Schedule Section */}
         <div className="bg-white rounded-2xl p-8 space-y-6 shadow-lg mt-12">
           <div className="space-y-6">
-            <div className="flex flex-wrap items-center sm:justify-between justify-center w-full  p-4 bg-[#F9FAFB] rounded-xl">
+            <div className="flex flex-wrap items-center md:justify-between gap-y-5 w-full  p-4 bg-[#F9FAFB] rounded-xl">
               <div className="flex items-center gap-3">
                 <Calendar className="w-5 h-5 font-medium text-blue-600" />
                 <div className="space-y-1">
@@ -47,7 +47,7 @@ export default function CourseLanding() {
                   <div className="font-medium">১৫ জানুয়ারি, ২০২৫ ইং</div>
                 </div>
               </div>
-              <div className="w-[2px] h-10 bg-gray-200"></div>
+              <div className="w-[2px]  h-10 hidden lg:block bg-gray-200"></div>
               <div className="flex items-center gap-3">
                 <Clock className="w-5 h-5 font-medium text-blue-600" />
                 <div className="space-y-1">
@@ -58,7 +58,7 @@ export default function CourseLanding() {
                 </div>
               </div>
 
-              <div className="w-[2px] h-10 bg-gray-200"></div>
+              <div className="w-[2px] h-10 hidden lg:block  bg-gray-200"></div>
               <div className="flex items-center gap-3">
                 <ClockAlert className="w-5 h-5 font-medium text-blue-600" />
                 <div className="space-y-1">
