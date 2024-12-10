@@ -37,7 +37,7 @@ export function Footer() {
             <Link href="/" className="inline-block">
               <Image src="/Skill.jobs_.png" width={300} height={100} alt="Daffodil Group" className="rounded-lg" />
             </Link>
-            <p className="text-slate-800">Daffodil Learning - a leading job application site and online career portal in Bangladesh</p>
+            <p className="text-slate-800">SkillJobs Learning - a leading job application site and online career portal in Bangladesh</p>
           </div>
 
           {/* Courses Section */}

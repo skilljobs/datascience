@@ -117,6 +117,7 @@ export default function DataFAQSection() {
           </AccordionItem>
         ))}
       </Accordion>
+      <div className="mb-4" />
       <FAQSection />
     </div>
   );
