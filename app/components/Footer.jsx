@@ -105,7 +105,7 @@ export function Footer() {
         {/* Bottom Section */}
         <div className="  border-t border-slate-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-slate-800 text-sm">© {new Date().getFullYear()} Daffodil Learning. All rights reserved.</div>
+            <div className="text-slate-800 text-sm">© {new Date().getFullYear()} SkillJobs Learning. All rights reserved.</div>
             <div className="hidden  flex items-center space-x-4">
               <Link href="/app-store" className="bg-slate-800 hover:bg-slate-700 text-slate-200 px-4 py-2 rounded-md transition-colors">
                 App Store
