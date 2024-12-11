@@ -17,7 +17,7 @@ export default function HeroSection() {
               borderRadius: "4px",
             }}
             className={` w-max mx-auto flex gap-3 bg-[#006cfa] hover:bg-blue-600 text-white font-semibold py-4 px-8  text-base  ${hindSiliguri.className}`}
-            href="https://docs.google.com/forms/d/e/1FAIpQLSeCHOFGh2wtQkFUMUgGTRtu2F6efckR8MbJuQV7C7EIH7X-rw/viewform"
+            href="https://forms.gle/YEYxLYr1fdtznTrs9"
             target="_blank"
           >
             <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
