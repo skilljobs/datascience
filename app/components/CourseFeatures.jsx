@@ -1,6 +1,10 @@
+import { Anek_Bangla } from "next/font/google";
 import Image from "next/image";
 import { hindSiliguri } from "../layout";
-
+const anekBangla = Anek_Bangla({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 const features = [
   {
     icon: "/ben/৪ মাসের স্টাডিপ্ল্যান.png",
@@ -86,7 +90,7 @@ export default function CourseFeatures() {
               <div className="w-16 h-16 mb-4 relative">
                 <Image src={feature.icon} alt="" layout="fill" objectFit="contain" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+              <h3 className={`${index === 0 && anekBangla.className} text-xl font-semibold mb-2`}>{feature.title}</h3>
               <p className="text-gray-600 text-sm">{feature.description}</p>
             </div>
           ))}
