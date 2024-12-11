@@ -38,7 +38,7 @@ export default function HeroSection() {
         <div className=" mt-16 text-center flex flex-col items-center">
           <h3 className="text-lg font-semibold mb-4 text-blue-600">A Concern Of Daffodil Family</h3>
           <Link href="/" className="inline-block">
-            <Image src="/Skill.jobs_.png" width={300} height={100} alt="Daffodil Group" className="rounded-lg" />
+            <Image src="/daffodilgrouppng.png" width={300} height={100} alt="Daffodil Group" className="rounded-lg" />
           </Link>
         </div>
       </div>
