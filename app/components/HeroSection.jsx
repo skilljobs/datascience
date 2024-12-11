@@ -4,7 +4,7 @@ import { hindSiliguri } from "../layout";
 
 export default function HeroSection() {
   return (
-    <main className="relative bg-[url('https://assets-global.website-files.com/5baa44fa6bf0bedd67643641/61e07b0bb85d3c05c4bb5bd2_hero-bg.jpg')] bg-cover bg-center min-h-[965px] md:min-h-[890px] flex flex-col items-center justify-center px-4">
+    <main className="relative bg-[url('https://assets-global.website-files.com/5baa44fa6bf0bedd67643641/61e07b0bb85d3c05c4bb5bd2_hero-bg.jpg')] bg-cover bg-center min-h-[975px] md:min-h-[890px] flex flex-col items-center justify-center px-4">
       <div className="w-full max-w-7xl mx-auto px-4 py-16">
         <div className="text-center max-w-5xl mx-auto">
           <p className="text-sm font-medium text-gray-600 mb-4 bg-[#fff] inline-block px-3 py-1 rounded-full">Learning Platform</p>
