@@ -4,7 +4,7 @@ import { hindSiliguri } from "../layout";
 
 export default function HeroSection() {
   return (
-    <main className="relative bg-[url('https://assets-global.website-files.com/5baa44fa6bf0bedd67643641/61e07b0bb85d3c05c4bb5bd2_hero-bg.jpg')] bg-cover bg-center min-h-[889px] flex flex-col items-center justify-center px-4">
+    <main className="relative bg-[url('https://assets-global.website-files.com/5baa44fa6bf0bedd67643641/61e07b0bb85d3c05c4bb5bd2_hero-bg.jpg')] bg-cover bg-center min-h-[860px] flex flex-col items-center justify-center px-4">
       <div className="w-full max-w-7xl mx-auto px-4 py-16">
         <div className="text-center max-w-5xl mx-auto">
           <p className="text-sm font-medium text-gray-600 mb-4 bg-[#fff] inline-block px-3 py-1 rounded-full">Learning Platform</p>
@@ -36,7 +36,10 @@ export default function HeroSection() {
         </div>
 
         <div className=" mt-16 text-center flex flex-col items-center">
-          <Image src="/daffodilgroup.jpg" width={300} height={100} alt="Daffodil Group" className="rounded-lg" />
+          <h3 className="text-lg font-semibold mb-4 text-blue-600">A Concern Of Daffodil Family</h3>
+          <Link href="/" className="inline-block">
+            <Image src="/Skill.jobs_.png" width={300} height={100} alt="Daffodil Group" className="rounded-lg" />
+          </Link>
         </div>
       </div>
 

@@ -57,7 +57,7 @@ export default function ComputerRequirements() {
             key={index}
             className="p-6 bg-gray-100  rounded-lg"
           >
-            <div className="bg-white p-2 rounded-lg inline-block">
+            <div className="p-2 rounded-lg inline-block">
               <Image className="" src={requirement.icon} alt="" width={64} height={64} />
             </div>
             <h2 className={`text-lg font-medium text-gray-800 ${hindSiliguri.className}`}>{requirement.title}</h2>
