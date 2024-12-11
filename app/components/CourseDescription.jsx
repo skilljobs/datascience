@@ -4,7 +4,7 @@ import { hindSiliguri } from "../layout";
 const CourseDescription = () => {
   return (
     <section className="">
-      <div className={`w-full max-w-7xl mx-auto px-4 py-16 ${hindSiliguri.className}`}>
+      <div className={`w-full max-w-7xl mx-auto px-4 py-16 bg-gray-50 ${hindSiliguri.className}`}>
         <h2 className="text-3xl font-bold text-center mb-12">কোর্সের বর্ণনা</h2>
 
         <div className="grid md:grid-cols-2 gap-12">
