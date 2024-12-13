@@ -66,7 +66,7 @@ export function Navbar() {
               >
                 Register
               </Link>
-              <Link href="/contact" style={{ borderRadius: "4px" }} className="text-blue-600 hover:text-blue-800 hover:bg-gray-200 duration-300 px-3 py-2 rounded-md text-sm font-medium">
+              <Link href="https://skill.jobs/contact-us" style={{ borderRadius: "4px" }} className="text-blue-600 hover:text-blue-800 hover:bg-gray-200 duration-300 px-3 py-2 rounded-md text-sm font-medium">
                 Contact Us
               </Link>
             </div>
@@ -106,7 +106,7 @@ export function Navbar() {
               <Link href="/register" className="block text-blue-600 hover:text-blue-800 px-3 py-2 rounded-md text-base font-medium">
                 Register
               </Link>
-              <Link href="/contact" className="block text-blue-600 hover:text-blue-800 px-3 py-2 rounded-md text-base font-medium">
+              <Link href="https://skill.jobs/contact-us" className="block text-blue-600 hover:text-blue-800 px-3 py-2 rounded-md text-base font-medium">
                 Contact Us
               </Link>
             </div>

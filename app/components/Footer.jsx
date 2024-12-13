@@ -7,7 +7,7 @@ const courseLinks = [
   { title: "Video Editing", href: "/courses/mobile-development" },
 ];
 
-const resourceLinks = [{ title: "About Us", href: "https://skill.jobs/about-us" }, { title: "Blog", href: "https://blog.skill.jobs/" }, , { title: "Contact", href: "/contact" }];
+const resourceLinks = [{ title: "About Us", href: "https://skill.jobs/about-us" }, { title: "Blog", href: "https://blog.skill.jobs/" }, , { title: "Contact", href: "https://skill.jobs/contact-us" }];
 
 const legalLinks = [
   { title: "Terms & Conditions", href: "https://skill.jobs/terms-and-conditions" },
