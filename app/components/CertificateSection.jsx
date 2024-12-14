@@ -6,7 +6,7 @@ export default function CertificateSection() {
     <div className="w-full max-w-7xl mx-auto px-4 py-8">
       <div className="text-center mb-8">
         <h2 className={`text-4xl font-bold  mb-4 ${hindSiliguri.className}`}>সার্টিফিকেট</h2>
-        <p className={`text-lg text-gray-700 ${hindSiliguri.className}`}>কোর্স শেষে পেয়ে যান পেয়ারেবল কোর্স কমপ্লিশন এবং এসেসমেন্ট সার্টিফিকেট</p>
+        <p className={`text-lg text-gray-700 ${hindSiliguri.className}`}>কোর্স শেষে পেয়ে যান প্রফেশনাল কোর্স কমপ্লিশন সার্টিফিকেট</p>
       </div>
 
       <div className="flex flex-col md:flex-row justify-center items-center gap-6 mt-12">
