@@ -36,7 +36,7 @@ export default function CourseLanding() {
             { number: "✓", label: "জব প্লেসমেন্ট সাপোর্ট" },
             { number: "∞", label: "লাইফটাইম ক্লাস রেকর্ডিং অ্যাক্সেস" },
             { number: "⚒️", label: "ইন্ডাস্ট্রি-রিলেভেন্ট টুলস" },
-            { number: "📝", label: "সম্পূর্ণ কারিকুলাম" },
+            { number: "📒", label: "সম্পূর্ণ কারিকুলাম" },
           ].map((stat, i) => (
             <div key={i} className="bg-white rounded-2xl border  border-blue-600 h-max p-px text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
               <div className={`${i === 0 && "py-2"} text-3xl font-bold  bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent select-none  ${anekBangla.className}`}>{stat.number}</div>
