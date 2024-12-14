@@ -1,5 +1,10 @@
 import { Calendar, Clock, ClockAlert } from "lucide-react";
-import { hindSiliguri } from "../layout";
+import { Anek_Bangla } from "next/font/google";
+
+const anekBangla = Anek_Bangla({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 export default function CourseLanding() {
   return (
     <div className="flex flex-col items-center justify-center w-full max-w-7xl mx-auto px-4 py-8">
@@ -34,8 +39,8 @@ export default function CourseLanding() {
             { number: "📝", label: "সম্পূর্ণ কারিকুলাম" },
           ].map((stat, i) => (
             <div key={i} className="bg-white rounded-2xl border  border-blue-600 h-max p-px text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
-              <div className={`${i === 0 && "py-2"} text-3xl font-bold  bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent select-none  ${hindSiliguri.className}`}>{stat.number}</div>
-              <div className={`text-gray-600 text-lg  ${hindSiliguri.className}`}>{stat.label}</div>
+              <div className={`${i === 0 && "py-2"} text-3xl font-bold  bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent select-none  ${anekBangla.className}`}>{stat.number}</div>
+              <div className={`text-gray-600 text-lg  ${anekBangla.className}`}>{stat.label}</div>
             </div>
           ))}
         </div>
@@ -47,7 +52,7 @@ export default function CourseLanding() {
               <div className="flex items-center gap-3">
                 <Calendar className="w-5 h-5 font-medium text-blue-600" />
                 <div className="space-y-1">
-                  <div className={`text-lg text-blue-600 font-bold ${hindSiliguri.className}`}>কোর্সটি শুরু:</div>
+                  <div className={`text-lg text-blue-600 font-bold ${anekBangla.className}`}>কোর্সটি শুরু:</div>
                   <div className="font-medium">২৫ জানুয়ারি, ২০২৫ ইং</div>
                 </div>
               </div>
