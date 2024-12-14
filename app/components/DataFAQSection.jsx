@@ -1,11 +1,11 @@
 "use client";
 
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Hind_Siliguri } from "next/font/google";
+import { Anek_Bangla } from "next/font/google";
 import Link from "next/link";
 import FAQSection from "./FAQSection";
 
-const hindSiliguri = Hind_Siliguri({
+const anekBangla = Anek_Bangla({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
@@ -92,8 +92,8 @@ const faqData = [
 
 export default function DataFAQSection() {
   return (
-    <div className={`w-full max-w-7xl mx-auto px-4 py-8 ${hindSiliguri.className}`}>
-      <h2 className={`text-4xl font-bold mb-8 text-center ${hindSiliguri.className}`}>Data Science and Machine Learning Zero to Mastery - FAQs</h2>
+    <div className={`w-full max-w-7xl mx-auto px-4 py-8 ${anekBangla.className}`}>
+      <h2 className={`text-4xl font-bold mb-8 text-center ${anekBangla.className}`}>Data Science and Machine Learning Zero to Mastery - FAQs</h2>
       <Accordion type="single" collapsible className="w-full space-y-4">
         {faqData.map((faq, index) => (
           <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg px-6 py-2">

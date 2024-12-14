@@ -1,11 +1,11 @@
 "use client";
-import { Hind_Siliguri } from "next/font/google";
-const hindSiliguri = Hind_Siliguri({
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Anek_Bangla } from "next/font/google";
+
+const anekBangla = Anek_Bangla({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
-
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const faqData = [
   // {
@@ -20,8 +20,8 @@ const faqData = [
   },
   {
     number: "19",
-    question: "আমার কি ভিডিওগুলোর লাইফটাইম একসেস থাকবে?",
-    answer: "হ্যাঁ, একবার কোর্সে এনরোল করলে আপনি লাইফটাইম একসেস পাবেন।",
+    question: "আমার কি ভিডিওগুলোর লাইফটাইম অ্যাক্সেস থাকবে?",
+    answer: "হ্যাঁ, একবার কোর্সে এনরোল করলে আপনি লাইফটাইম অ্যাক্সেস পাবেন।",
   },
   {
     number: "20",
@@ -57,7 +57,7 @@ const faqData = [
 
 export default function FAQSection() {
   return (
-    <Accordion type="single" collapsible className="w-full space-y-4">
+    <Accordion type="single" collapsible className={`w-full space-y-4 ${anekBangla.className}`}>
       {faqData.map((faq, index) => (
         <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg px-6 py-2">
           <AccordionTrigger className="text-xl font-bold hover:no-underline">{`${faq.number}. ${faq.question}`}</AccordionTrigger>
