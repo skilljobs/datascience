@@ -1,20 +1,16 @@
 "use client";
-import { Hind_Siliguri } from "next/font/google";
-const hindSiliguri = Hind_Siliguri({
+import { Anek_Bangla } from "next/font/google";
+import Image from "next/image";
+
+const anekBangla = Anek_Bangla({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
 
 import { ChevronDown } from "lucide-react";
-import Image from "next/image";
 import { useState } from "react";
 
-const bgColors = [
-  "bg-[#FFA500]",
-  "bg-[#FF7F50]",
-  "bg-[#9370DB]",
-  "bg-[#00BFFF]",
-];
+const bgColors = ["bg-[#FFA500]", "bg-[#FF7F50]", "bg-[#9370DB]", "bg-[#00BFFF]"];
 
 export default function CourseCurriculum() {
   const [openSections, setOpenSections] = useState({});
@@ -25,8 +21,7 @@ export default function CourseCurriculum() {
       instructor: "Shahriar Jahan Rafi",
       weeks: "১-২",
       modules: {
-        title:
-          "সপ্তাহ ১-২: ডেটা সায়েন্সের প্রাথমিক ধারণা এবং পাইথন প্রোগ্রামিং",
+        title: "সপ্তাহ ১-২: ডেটা সায়েন্সের প্রাথমিক ধারণা এবং পাইথন প্রোগ্রামিং",
         modules: [
           {
             number: "১",
@@ -142,13 +137,11 @@ export default function CourseCurriculum() {
           },
           {
             number: "৬",
-            title:
-              "দিন ৪১-৪২: Matplotlib এবং Seaborn - ১ (বেসিক ভিজুয়ালাইজেশন)",
+            title: "দিন ৪১-৪২: Matplotlib এবং Seaborn - ১ (বেসিক ভিজুয়ালাইজেশন)",
           },
           {
             number: "৭",
-            title:
-              "দিন ৪৩-৪৪: Matplotlib এবং Seaborn - ২ (এডভান্সড ভিজুয়ালাইজেশন)",
+            title: "দিন ৪৩-৪৪: Matplotlib এবং Seaborn - ২ (এডভান্সড ভিজুয়ালাইজেশন)",
           },
         ],
       },
@@ -170,13 +163,11 @@ export default function CourseCurriculum() {
           },
           {
             number: "৩",
-            title:
-              "দিন ৫১-৫২: লিনিয়ার রিগ্রেশন স্কikit-learn ব্যবহার করে (২টি লেকচার)",
+            title: "দিন ৫১-৫২: লিনিয়ার রিগ্রেশন Scikit-learn ব্যবহার করে (২টি লেকচার)",
           },
           {
             number: "৪",
-            title:
-              "দিন ৫৩-৫৪: লজিস্টিক রিগ্রেশন স্কikit-learn ব্যবহার করে (২টি লেকচার)",
+            title: "দিন ৫৩-৫৪: লজিস্টিক রিগ্রেশন Scikit-learn ব্যবহার করে (২টি লেকচার)",
           },
           {
             number: "৫",
@@ -184,7 +175,7 @@ export default function CourseCurriculum() {
           },
           {
             number: "৬",
-            title: "দিন ৫৭-৫৮: র্যান্ডম ফরেস্ট (২টি লেকচার)",
+            title: "দিন ৫৭-৫৮: রেন্ডম ফরেস্ট (২টি লেকচার)",
           },
           {
             number: "৭",
@@ -192,8 +183,7 @@ export default function CourseCurriculum() {
           },
           {
             number: "৮",
-            title:
-              "দিন ৬১-৬২: আনসুপারভাইজড লার্নিং: ক্লাস্টারিং, K-মিন্স, রিকমেন্ডার সিস্টেম (২টি লেকচার)",
+            title: "দিন ৬১-৬২: আনসুপারভাইজড লার্নিং: ক্লাস্টারিং, মিন, রিকমেন্ডার সিস্টেম (২টি লেকচার)",
           },
         ],
       },
@@ -208,82 +198,42 @@ export default function CourseCurriculum() {
   };
 
   return (
-    <main>
+    <main className={`relative ${anekBangla.className}`}>
       {/* Title */}
-      <h1
-        className={`text-3xl font-semibold text-center mb-12 text-gray-800 ${hindSiliguri.className}`}
-      >
-        কারিকুলাম
-      </h1>
+      <h1 className={`text-3xl font-semibold text-center mb-12 text-gray-800 ${anekBangla.className}`}>কারিকুলাম</h1>
 
       {/* Curriculum Container */}
-      <div className="w-full max-w-7xl mx-auto py-10 px-6 bg-[#F9F9FA] rounded-lg shadow-lg">
+      <div className="w-full max-w-7xl mx-auto py-8 px-6 bg-[#F9F9FA] rounded-lg shadow-lg">
         <div className="grid md:grid-cols-2 gap-14">
           {curriculum.map((section, sectionIndex) => (
-            <div
-              key={sectionIndex}
-              className={`bg-white rounded-xl shadow-md overflow-hidden ${
-                sectionIndex !== 0 && hindSiliguri.className
-              }`}
-            >
+            <div key={sectionIndex} className={`bg-white rounded-xl shadow-md overflow-hidden ${sectionIndex !== 0 && anekBangla.className}`}>
               {/* Section Header */}
               {/* <div className="p-6 bg-gradient-to-r from-[#6EE7B7] to-[#3B82F6] text-white"> */}
               <div className="p-6 bg-gray-600 text-white">
-                <h2 className="text-xl font-semibold text-center">
-                  {section.title}
-                </h2>
+                <h2 className="text-2xl font-semibold text-center">{section.title}</h2>
                 <div className="flex items-center justify-center gap-3 text-sm mt-2">
                   <span>ক্লাস শিক্ষক</span>
-                  <Image
-                    width={24}
-                    height={24}
-                    src="/profile.png"
-                    alt="Instructor"
-                    className="w-8 h-8 rounded-full border border-white"
-                  />
+                  <Image width={24} height={24} src="/profile.png" alt="Instructor" className="w-8 h-8 rounded-full border border-white" />
                   <span>{section.instructor}</span>
                 </div>
               </div>
 
               {/* Accordion Toggle Button */}
               <div className="p-4">
-                <button
-                  onClick={() => toggleSection(`section-${sectionIndex}`)}
-                  className="w-full flex items-center justify-between p-4 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors duration-300"
-                >
+                <button onClick={() => toggleSection(`section-${sectionIndex}`)} className="w-full flex items-center justify-between p-4 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors duration-300">
                   <div>
-                    <span
-                      className={`font-semibold ${bgColors[sectionIndex]} text-white px-3 py-1 rounded mr-2`}
-                    >
-                      সপ্তাহ {section.weeks}
-                    </span>
-                    <span className="text-sm">{section.modules.title}</span>
+                    <span className={`font-semibold ${bgColors[sectionIndex]} text-white px-3 py-1 rounded mr-2 text-xl`}>সপ্তাহ {section.weeks}</span>
+                    <span className="text-lg">{section.modules.title}</span>
                   </div>
-                  <ChevronDown
-                    className={`transition-transform duration-300 h-6 w-6 text-gray-400 bg-gray-200 rounded-full ${
-                      openSections[`section-${sectionIndex}`]
-                        ? "rotate-180"
-                        : ""
-                    }`}
-                  />
+                  <ChevronDown className={`transition-transform duration-300 h-6 w-6 text-gray-400 bg-gray-200 rounded-full ${openSections[`section-${sectionIndex}`] ? "rotate-180" : ""}`} />
                 </button>
 
                 {/* Module List */}
-                <div
-                  className={`mt-2 space-y-2 overflow-hidden transition-all duration-300 ease-in-out ${
-                    openSections[`section-${sectionIndex}`]
-                      ? "max-h-[1000px] opacity-100"
-                      : "max-h-0 opacity-0"
-                  }`}
-                >
+                <div className={`mt-2 space-y-2 overflow-hidden transition-all duration-300 ease-in-out ${openSections[`section-${sectionIndex}`] ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"}`}>
                   {section.modules.modules.map((module, moduleIndex) => (
                     <div key={moduleIndex} className="border-t border-gray-200">
                       <div className="flex items-center gap-4 p-4 hover:bg-gray-50 transition-all duration-200">
-                        <div
-                          className={`${bgColors[sectionIndex]} text-white w-12 h-12 rounded-lg flex items-center justify-center font-bold`}
-                        >
-                          {module.number}
-                        </div>
+                        <div className={`${bgColors[sectionIndex]} text-white w-12 h-12 rounded-lg flex items-center justify-center font-bold`}>{module.number}</div>
                         <span className="flex-1">{module.title}</span>
                       </div>
                     </div>

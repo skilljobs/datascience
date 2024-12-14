@@ -26,7 +26,7 @@ const helpCenter = [
 export function Footer() {
   return (
     <footer className="bg-gray-300 text-slate-800">
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 py-8">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
           {/* Brand Section */}

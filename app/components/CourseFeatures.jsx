@@ -78,7 +78,7 @@ const features = [
 export default function CourseFeatures() {
   return (
     <section className={`${hindSiliguri.className}`}>
-      <div className="w-full max-w-7xl mx-auto px-4 py-16 bg-gray-50">
+      <div className="w-full max-w-7xl mx-auto px-4 py-8 bg-gray-50">
         <h2 className="text-3xl font-bold text-center mb-12 relative">
           কোর্সে আপনি পাচ্ছেন
           {/* <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-yellow-400 mt-2"></div> */}

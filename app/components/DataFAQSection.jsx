@@ -92,7 +92,7 @@ const faqData = [
 
 export default function DataFAQSection() {
   return (
-    <div className={`w-full max-w-7xl mx-auto px-4 py-16 ${hindSiliguri.className}`}>
+    <div className={`w-full max-w-7xl mx-auto px-4 py-8 ${hindSiliguri.className}`}>
       <h2 className={`text-4xl font-bold mb-8 text-center ${hindSiliguri.className}`}>Data Science and Machine Learning Zero to Mastery - FAQs</h2>
       <Accordion type="single" collapsible className="w-full space-y-4">
         {faqData.map((faq, index) => (

@@ -2,7 +2,7 @@ import { Calendar, Clock, ClockAlert } from "lucide-react";
 import { hindSiliguri } from "../layout";
 export default function CourseLanding() {
   return (
-    <div className="flex flex-col items-center justify-center w-full max-w-7xl mx-auto px-4 py-16">
+    <div className="flex flex-col items-center justify-center w-full max-w-7xl mx-auto px-4 py-8">
       {/* Header Section */}
       <h1 className="text-4xl font-bold mb-8 text-center">Course Summary</h1>
       <div className=" hidden text-center mb-8 max-w-3xl mx-auto">

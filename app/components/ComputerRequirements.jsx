@@ -39,7 +39,7 @@ export default function ComputerRequirements() {
   ];
 
   return (
-    <div className="w-full max-w-7xl mx-auto px-4 py-16">
+    <div className="w-full max-w-7xl mx-auto px-4 py-8">
       <h1 className={`text-4xl font-bold text-center mb-12 ${hindSiliguri.className}`}>
         কী কী{" "}
         <span className=" relative">

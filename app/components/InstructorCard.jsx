@@ -4,7 +4,7 @@ import { hindSiliguri } from "../layout";
 
 export default function InstructorCard() {
   return (
-    <div className="max-w-2xl mx-auto p-6">
+    <div className="max-w-2xl mx-auto px-4 py-8">
       <h1 className={`text-4xl font-bold text-center mb-8 ${hindSiliguri.className}`}>ইন্সট্রাক্টর</h1>
       <Link href="https://bd.linkedin.com/in/shahriarjrafi" target="_blank">
         <div className="bg-white transform transition-all duration-300 hover:-translate-y-2 rounded-lg shadow-lg p-6 flex flex-col md:flex-row items-center gap-6">

@@ -1,10 +1,13 @@
 import { BarChartIcon as ChartBar, Code } from "lucide-react";
-import { hindSiliguri } from "../layout";
-
+import { Anek_Bangla } from "next/font/google";
+const anekBangla = Anek_Bangla({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 const CourseDescription = () => {
   return (
     <section className="">
-      <div className={`w-full max-w-7xl mx-auto px-4 py-16 bg-gray-50 ${hindSiliguri.className}`}>
+      <div className={`w-full max-w-7xl mx-auto px-4 py-8 bg-gray-50 ${anekBangla.className}`}>
         <h2 className="text-3xl font-bold text-center mb-12">কোর্সের বর্ণনা</h2>
 
         <div className="grid md:grid-cols-2 gap-12">
@@ -13,8 +16,8 @@ const CourseDescription = () => {
               <Code className="w-8 h-8 text-blue-500 mr-3" />
               <h3 className="text-2xl font-semibold">পাইথন প্রোগ্রামিং</h3>
             </div>
-            <p className="text-gray-600 mb-6">পাইথন একটি সাধারণ উদ্দেশ্যে ব্যবহৃত প্রোগ্রামিং ভাষা, যা ডেটা সায়েন্সের জন্য দিনে দিনে জনপ্রিয় হয়ে উঠছে। বিশ্বব্যাপী অনেক কোম্পানি তাদের ডেটা থেকে অন্তর্দৃষ্টি বের করতে এবং প্রতিযোগিতামূলক সুবিধা অর্জন করতে পাইথন ব্যবহার করছে।</p>
-            <p className="text-gray-600">অন্যান্য পাইথন টিউটোরিয়াল থেকে আলাদা, এই কোর্সটি বিশেষভাবে ডেটা সায়েন্সের জন্য পাইথন নিয়ে। আমাদের ইন্ট্রো টু পাইথন ক্লাসে আপনি ডেটা স্টোর এবং ম্যানিপুলেট করার শক্তিশালী উপায়গুলি শিখবেন, এবং আপনার নিজের বিশ্লেষণ শুরু করার জন্য শীতল ডেটা সায়েন্স টুলস সম্পর্কে জানবেন।</p>
+            <p className="text-gray-600 mb-6">পাইথন একটি সাধারণ উদ্দেশ্যে ব্যবহৃত প্রোগ্রামিং ভাষা, যা ডেটা সায়েন্সের জন্য দিনে দিনে জনপ্রিয় হয়ে উঠছে। বিশ্বব্যাপী অনেক কোম্পানি তাদের ডেটা থেকে ইনসাইট বের করতে এবং প্রতিযোগিতামূলক সুবিধা অর্জন করতে পাইথন ব্যবহার করছে।</p>
+            <p className="text-gray-600">এই কোর্সটি বিশেষভাবে ডেটা সায়েন্স ও মেশিন লার্নিং শিখতে পাইথনের ব্যবহার কিভাবে হয় তা নিয়ে। আমাদের ইন্ট্রো টু পাইথন ক্লাসে আপনি ডেটা স্টোর, ফাংশন, ভেরিয়েবল, লুপ এবং ম্যানিপুলেট করার শক্তিশালী উপায়গুলি শিখবেন, এবং আপনার নিজের কাজের জন্য ডেটা বিশ্লেষণ কিভাবে শুরু করতে হবে সেই টুলস গুলো সম্পর্কে জানবেন।</p>
           </div>
 
           <div className="bg-white p-8 rounded-lg shadow-md">
@@ -29,7 +32,7 @@ const CourseDescription = () => {
             </div>
             <div className="mb-6">
               <h4 className="text-lg font-semibold mb-2">কোর্সের দ্বিতীয় অংশ:</h4>
-              <p className="text-gray-600 mb-4">মেশিন লার্নিং-এ ফোকাস করা হবে। এখানে সুপারভাইজড এবং আনসুপারভাইজড লার্নিং উভয় বিষয় আলোচনা করা হবে। আমরা বিভিন্ন খাতের কেস স্টাডি নিয়ে কাজ করব, যার মধ্যে ফাইনান্স, হেলথকেয়ার, রিয়েল এস্টেট, সেলস, এবং মার্কেটিং অন্তর্ভুক্ত।</p>
+              <p className="text-gray-600 mb-4">মেশিন লার্নিং-এ ফোকাস করা হবে। এখানে সুপারভাইজড এবং আনসুপারভাইজড লার্নিং উভয় বিষয় আলোচনা করা হবে। আমরা বিভিন্ন ধরনের কেস স্টাডি নিয়ে কাজ করব, যার মধ্যে ফাইনান্সিয়াল, হেলথকেয়ার, রিয়েল এস্টেট, সেলস, এবং মার্কেটিং অন্তর্ভুক্ত।</p>
               <h5 className="text-md font-semibold mb-2">গুরুত্বপূর্ণ অ্যালগোরিদম:</h5>
               <ul className="list-disc list-inside text-gray-600">
                 <li>লিনিয়ার রিগ্রেশন</li>
@@ -38,7 +41,7 @@ const CourseDescription = () => {
                 <li>K-মিনস ক্লাস্টারিং</li>
               </ul>
             </div>
-            <p className="text-gray-600 italic">এই কোর্সটি এই স্পেশালাইজেশনের ডীপ লার্নিং কোর্সের জন্য একটি ভিত্তি তৈরি করবে।</p>
+            <p className="text-gray-600 italic">এই কোর্সটি স্পেশালাইজড ডীপ লার্নিং কোর্সের জন্য একটি ভিত্তি তৈরি করবে।</p>
           </div>
         </div>
       </div>
