@@ -1,22 +1,26 @@
+import { Anek_Bangla } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import { hindSiliguri } from "../layout";
+
+const anekBangla = Anek_Bangla({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 
 export default function HeroSection() {
   return (
     <main className="relative bg-[url('https://assets-global.website-files.com/5baa44fa6bf0bedd67643641/61e07b0bb85d3c05c4bb5bd2_hero-bg.jpg')] bg-cover bg-center min-h-[890px] md:min-h-[790px] flex flex-col items-center justify-center px-4">
       <div className="w-full max-w-7xl mx-auto px-4  relative -top-14">
         <div className="text-center max-w-5xl mx-auto">
-          <p className="text-sm font-medium text-gray-600 mb-4 bg-[#fff] inline-block px-3 py-1 rounded-full">Learning Platform</p>
           <h1 style={{ lineHeight: "1.2" }} className="text-4xl sm:text-5xl md:text-[3.1rem] font-bold text-navy-900 mb-6">
             Data Science and Machine Learning Zero to Mastery (24th Batch)
           </h1>
-          <p className={`text-lg text-gray-600 mb-8 max-w-2xl mx-auto ${hindSiliguri.className}`}>এ দেশের সবচেয়ে বড় ডাটা সায়েন্স ও মেশিন লার্নিং কোর্সটি এখন Skill Jobs-এ, যা একদম বিগিনারদের জন্য সাজানো হয়েছে। এখানে আপনি জয়েন করতে পারবেন কোনো কোডিং নলেজ ছাড়াই!</p>
+          <p className={`text-lg text-gray-600 mb-8 max-w-2xl mx-auto ${anekBangla.className}`}>দেশের সবচেয়ে বড় ডাটা সায়েন্স ও মেশিন লার্নিং কোর্সটি এখন Skill Jobs-এ, যা একদম বিগিনারদের জন্য সাজানো হয়েছে। এখানে আপনি জয়েন করতে পারবেন কোনো কোডিং নলেজ ছাড়াই!</p>
           <Link
             style={{
               borderRadius: "4px",
             }}
-            className={` w-max mx-auto flex gap-3 bg-[#006cfa] hover:bg-blue-600 text-white font-semibold py-4 px-8  text-base  ${hindSiliguri.className}`}
+            className={` w-max mx-auto flex gap-3 bg-[#006cfa] hover:bg-blue-600 text-white font-semibold py-4 px-8  text-base  ${anekBangla.className}`}
             href="https://forms.gle/YEYxLYr1fdtznTrs9"
             target="_blank"
           >

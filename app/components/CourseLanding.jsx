@@ -25,16 +25,16 @@ export default function CourseLanding() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
           {[
             { number: "৩৫ টি", label: "লাইভ ক্লাস" },
-            { number: "৭৫", label: "ঘন্টা লার্নিং ক্লাস" },
+            { number: "৭৫", label: "ঘন্টা সেশন লার্ন" },
             { number: "∞", label: "লাইফটাইম ক্লাস রেকর্ডিং অ্যাক্সেস" },
-            { number: "🎓", label: "ইন্টার্নশীপ প্লেসমেন্ট সাপোর্ট " },
+            { number: "🎓", label: "ইন্টার্নশীপ সাপোর্ট " },
             { number: "✓", label: "জব প্লেসমেন্ট সাপোর্ট" },
             { number: "💪", label: "হ্যান্ডস-অন প্রজেক্ট" },
             { number: "⚒️", label: "ইন্ডাস্ট্রি-রিলেভেন্ট টুলস" },
             { number: "📝", label: "সম্পূর্ণ কারিকুলাম" },
           ].map((stat, i) => (
             <div key={i} className="bg-white rounded-2xl border  border-blue-600 h-max p-px text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
-              <div className={`${i === 0 && "py-2"} text-3xl font-bold  bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent  ${hindSiliguri.className}`}>{stat.number}</div>
+              <div className={`${i === 0 && "py-2"} text-3xl font-bold  bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent select-none  ${hindSiliguri.className}`}>{stat.number}</div>
               <div className={`text-gray-600 text-lg  ${hindSiliguri.className}`}>{stat.label}</div>
             </div>
           ))}

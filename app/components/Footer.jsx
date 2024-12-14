@@ -18,7 +18,7 @@ const legalLinks = [
 const helpCenter = [
   {
     address: "DT4, 102/1 Shukrabad, Mirpur Road, Dhanmondi, Dhaka-1207",
-    cell: ["01847-334766", "+8801847027537"],
+    cell: ["+880 184-733-4766", "+880 184-702-7537"],
     email: "contact@skill.jobs",
   },
 ];
@@ -84,7 +84,17 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4 text-blue-600">Help Center</h3>
             <div className="text-slate-800">
               <p className="mb-2">Address: {helpCenter[0].address}</p>
-              <p className="mb-2">Cell: {helpCenter[0].cell.join(", ")}</p>
+              <p className="mb-2">
+                Cell:
+                {helpCenter[0].cell.map((number, index) => (
+                  <span key={index}>
+                    {" "}
+                    {number}
+                    <br />
+                  </span>
+                ))}
+              </p>
+
               <p>
                 Email:{" "}
                 <a href={`mailto:${helpCenter[0].email}`} className="text-blue-600 hover:underline">
