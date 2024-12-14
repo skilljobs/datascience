@@ -221,8 +221,8 @@ export default function CourseCurriculum() {
               {/* Accordion Toggle Button */}
               <div className="p-4">
                 <button onClick={() => toggleSection(`section-${sectionIndex}`)} className="w-full flex items-center justify-between p-4 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors duration-300">
-                  <div className="flex items-center flex-wrap md:flex-row">
-                    <p className={`font-semibold ${bgColors[sectionIndex]} text-white px-3 py-1 rounded mr-2 text-xl`}>সপ্তাহ {section.weeks}</p>
+                  <div className="flex flex-col  lg:flex-row">
+                    <p className={`font-semibold h-max ${bgColors[sectionIndex]} min-w-[110px] text-white px-3 py-1 rounded mr-2 text-xl`}>সপ্তাহ {section.weeks}</p>
                     <p className="text-lg">{section.modules.title}</p>
                   </div>
                   <ChevronDown className={`transition-transform duration-300 h-6 w-6 text-gray-400 bg-gray-200 rounded-full ${openSections[`section-${sectionIndex}`] ? "rotate-180" : ""}`} />
