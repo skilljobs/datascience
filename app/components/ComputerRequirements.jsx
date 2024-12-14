@@ -4,15 +4,15 @@ import { hindSiliguri } from "../layout";
 export default function ComputerRequirements() {
   const requirements = [
     {
-      icon: "/laptop.png",
+      icon: "/needs/ল্যাপটপ_ডেস্কটপ.png",
       title: "একটি ল্যাপটপ বা পিসি",
     },
     {
-      icon: "/freelance.png",
+      icon: "/needs/ভালো ইন্টারনেট কানেকশন.png",
       title: "ভালো ইন্টারনেট কানেকশন",
     },
     {
-      icon: "/programming.png",
+      icon: "/needs/প্রোগ্রামিং ফান্ডামেন্টালস জানা থাকলে ভালো.png",
       title: "প্রোগ্রামিং ফান্ডামেন্টালস জানা থাকলে ভালো",
     },
     // {
@@ -24,16 +24,16 @@ export default function ComputerRequirements() {
     //   title: "২৫৬ জিবি এসএসডি",
     // },
     {
-      icon: "/career.png",
+      icon: "/needs/ক্যারিয়ার ফোকাসড.png",
       title: "ক্যারিয়ার ফোকাসড",
     },
 
     {
-      icon: "/bachelor.png",
+      icon: "/needs/স্নাতক অধ্যয়নরত.png",
       title: "স্নাতক অধ্যয়নরত বা স্নাতক পাশ",
     },
     {
-      icon: "/perseverance.png",
+      icon: "/needs/লেগে থাকার মানসিকতা.png",
       title: "লেগে থাকার মানসিকতা",
     },
   ];
