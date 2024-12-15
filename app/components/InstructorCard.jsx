@@ -1,11 +1,15 @@
+import { Anek_Bangla } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import { hindSiliguri } from "../layout";
 
+const anekBangla = Anek_Bangla({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 export default function InstructorCard() {
   return (
     <div className="max-w-2xl mx-auto px-4 py-8">
-      <h1 className={`text-4xl font-bold text-center mb-8 ${hindSiliguri.className}`}>ইন্সট্রাক্টর</h1>
+      <h1 className={`text-4xl font-bold text-center mb-8 ${anekBangla.className}`}>ইন্সট্রাক্টর</h1>
       <Link href="https://bd.linkedin.com/in/shahriarjrafi" target="_blank">
         <div className="bg-white transform transition-all duration-300 hover:-translate-y-2 rounded-lg shadow-lg p-6 flex flex-col md:flex-row items-center gap-6">
           <div className="flex-1 space-y-4">
@@ -19,7 +23,7 @@ export default function InstructorCard() {
 
               <div className="space-y-1">
                 <div className="flex items-center gap-2">
-                  <span className="text-gray-700">✓ Taught over ২৫০+ students</span>
+                  <span className="text-gray-700">✓ Taught over 250+ students</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="font-medium text-blue-600">✓ 7 years of industry experience</span>

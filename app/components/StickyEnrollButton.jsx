@@ -1,11 +1,14 @@
+import { Anek_Bangla } from "next/font/google";
 import Link from "next/link";
-import { hindSiliguri } from "../layout";
-
+const anekBangla = Anek_Bangla({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 export default function StickyEnrollButton() {
   return (
     <div>
       <div className=" px-4 py-6  flex  justify-center flex-col sm:flex-row items-center gap-4 md:gap-8 bg-gray-900">
-        <h3 className={`text-white text-xl font-semibold ${hindSiliguri.className}`}>সিট সংখ্যা শেষ হওয়ার আগে জয়েন করুন</h3>
+        <h3 className={`text-white text-xl font-semibold ${anekBangla.className}`}>সিট সংখ্যা শেষ হওয়ার আগে জয়েন করুন</h3>
         <Link href="https://forms.gle/YEYxLYr1fdtznTrs9" className=" justify-center items-center gap-3 min-w-[150px] w-full sm:w-auto py-4 flex bg-red-600 hover:bg-red-700 duration-300 text-white font-bold  px-4 rounded" target="_blank">
           <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#a)" stroke="#fff" strokeLinecap="round" strokeLinejoin="round">

@@ -1,5 +1,10 @@
+import { Anek_Bangla } from "next/font/google";
 import Image from "next/image";
-import { hindSiliguri } from "../layout";
+
+const anekBangla = Anek_Bangla({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 
 export default function ComputerRequirements() {
   const requirements = [
@@ -40,7 +45,7 @@ export default function ComputerRequirements() {
 
   return (
     <div className="w-full max-w-7xl mx-auto px-4 py-8">
-      <h1 className={`text-4xl font-bold text-center mb-12 ${hindSiliguri.className}`}>
+      <h1 className={`text-4xl font-bold text-center mb-12 ${anekBangla.className}`}>
         কী কী{" "}
         <span className=" relative">
           থাকতে
@@ -60,7 +65,7 @@ export default function ComputerRequirements() {
             <div className="p-2 rounded-lg inline-block">
               <Image className="" src={requirement.icon} alt="" width={64} height={64} />
             </div>
-            <h2 className={`text-lg font-medium text-gray-800 ${hindSiliguri.className}`}>{requirement.title}</h2>
+            <h2 className={`text-lg font-medium text-gray-800 ${anekBangla.className}`}>{requirement.title}</h2>
           </div>
         ))}
       </div>

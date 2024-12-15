@@ -1,6 +1,5 @@
 import { Anek_Bangla } from "next/font/google";
 import Image from "next/image";
-import { hindSiliguri } from "../layout";
 const anekBangla = Anek_Bangla({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -77,7 +76,7 @@ const features = [
 
 export default function CourseFeatures() {
   return (
-    <section className={`${hindSiliguri.className}`}>
+    <section className={`${anekBangla.className}`}>
       <div className="w-full max-w-7xl mx-auto px-4 py-8 bg-gray-50">
         <h2 className="text-3xl font-bold text-center mb-12 relative">
           কোর্সে আপনি পাচ্ছেন

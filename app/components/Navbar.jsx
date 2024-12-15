@@ -45,7 +45,7 @@ export function Navbar() {
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
-              <Link
+              {/* <Link
                 href="/courses"
                 style={{
                   borderRadius: "4px",
@@ -65,7 +65,7 @@ export function Navbar() {
                 className="text-blue-600 hover:text-blue-800 hover:bg-gray-200 duration-300 px-3 py-2 rounded-md text-sm font-medium"
               >
                 Register
-              </Link>
+              </Link> */}
               <Link href="https://skill.jobs/contact-us" style={{ borderRadius: "4px" }} className="text-blue-600 hover:text-blue-800 hover:bg-gray-200 duration-300 px-3 py-2 rounded-md text-sm font-medium">
                 Contact Us
               </Link>
@@ -97,7 +97,7 @@ export function Navbar() {
               </Button>
             </div>
             <div className="space-y-4">
-              <Link href="/courses" className="block text-blue-600 hover:text-blue-800 px-3 py-2 rounded-md text-base font-medium">
+              {/* <Link href="/courses" className="block text-blue-600 hover:text-blue-800 px-3 py-2 rounded-md text-base font-medium">
                 View All Courses
               </Link>
               <Link href="/login" className="block text-blue-600 hover:text-blue-800 px-3 py-2 rounded-md text-base font-medium">
@@ -105,7 +105,7 @@ export function Navbar() {
               </Link>
               <Link href="/register" className="block text-blue-600 hover:text-blue-800 px-3 py-2 rounded-md text-base font-medium">
                 Register
-              </Link>
+              </Link> */}
               <Link href="https://skill.jobs/contact-us" className="block text-blue-600 hover:text-blue-800 px-3 py-2 rounded-md text-base font-medium">
                 Contact Us
               </Link>
