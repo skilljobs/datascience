@@ -1,11 +1,29 @@
+"use client";
+
 import { CheckCircle, Mail, Phone, Calendar, ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Footer } from "../components/Footer";
 import { Navbar } from "../components/Navbar";
 
 export default function ThankYou() {
+  useEffect(() => {
+    // Track CompleteRegistration event since user reached thank you page
+    const trackRegistration = () => {
+      if (window.fbq) {
+        window.fbq('track', 'CompleteRegistration');
+      } else {
+        // Retry after a short delay if fbq isn't loaded yet
+        setTimeout(trackRegistration, 500);
+      }
+    };
+    
+    // Small delay to ensure pixel is loaded from layout
+    setTimeout(trackRegistration, 1000);
+  }, []);
+
   return (
     <main className="">
       <Navbar />
@@ -24,8 +42,6 @@ export default function ThankYou() {
           </p>
         </div>
       </div>
-
-  
 
       <Footer />
     </main>
