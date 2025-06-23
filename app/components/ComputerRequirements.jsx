@@ -9,15 +9,15 @@ const anekBangla = Anek_Bangla({
 export default function ComputerRequirements() {
   const requirements = [
     {
-      icon: "/needs/ল্যাপটপ_ডেস্কটপ.png",
+      icon: "/needs/laptop.png",
       title: "একটি ল্যাপটপ বা পিসি",
     },
     {
-      icon: "/needs/ভালো ইন্টারনেট কানেকশন.png",
+      icon: "/needs/internet.png",
       title: "ভালো ইন্টারনেট কানেকশন",
     },
     {
-      icon: "/needs/প্রোগ্রামিং ফান্ডামেন্টালস জানা থাকলে ভালো.png",
+      icon: "/needs/programming.png",
       title: "প্রোগ্রামিং ফান্ডামেন্টালস জানা থাকলে ভালো",
     },
     // {
@@ -29,16 +29,16 @@ export default function ComputerRequirements() {
     //   title: "২৫৬ জিবি এসএসডি",
     // },
     {
-      icon: "/needs/ক্যারিয়ার ফোকাসড.png",
+      icon: "/needs/career.png",
       title: "ক্যারিয়ার ফোকাসড",
     },
 
     {
-      icon: "/needs/স্নাতক অধ্যয়নরত.png",
+      icon: "/needs/graduation.png",
       title: "স্নাতক অধ্যয়নরত বা স্নাতক পাশ",
     },
     {
-      icon: "/needs/লেগে থাকার মানসিকতা.png",
+      icon: "/needs/determined.png",
       title: "লেগে থাকার মানসিকতা",
     },
   ];
