@@ -20,7 +20,7 @@ export default function ThankYou() {
             Thank You!
           </h1>
           <p className="text-xl text-gray-600 mb-8">
-            Your enrollment has been successfully submitted. We're excited to have you join our learning community!
+            Your enrollment has been successfully submitted. We are excited to have you join our learning community!
           </p>
         </div>
       </div>
