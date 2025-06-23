@@ -72,7 +72,7 @@ export default function CourseLanding() {
                 <ClockAlert className="w-5 h-5 font-medium text-blue-600" />
                 <div className="space-y-1">
                   <div className="text-lg text-blue-600 font-bold"> কোর্স শেষ:</div>
-                  <div className="font-medium">১৫ মে, ২০২৫ ইং</div>
+                  <div className="font-medium">২৫শে নভেম্বর, ২০২৫ইং</div>
                 </div>
               </div>
               {/* Class Timing Section */}
