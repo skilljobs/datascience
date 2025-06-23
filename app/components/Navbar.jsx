@@ -40,34 +40,64 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0">
-              <Image src="/Skill.jobs_.png" width={210} height={100} alt="Daffodil Group" className="rounded-lg" />
+              <Image src="/Skill.jobs_.png" width={160} height={60} alt="Daffodil Group" className="rounded-lg" />
             </Link>
           </div>
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
-              {/* <Link
-                href="/courses"
-                style={{
-                  borderRadius: "4px",
-                }}
-                className="text-blue-600 hover:text-blue-800 px-3 hover:bg-gray-200 duration-300 py-2  text-sm font-medium"
+            <div className="ml-5 flex items-baseline space-x-4">
+              <Link
+                href="/"
+                className="text-blue-600 hover:text-blue-800 px-2 py-2 hover:bg-gray-200 duration-300 rounded-md text-sm font-medium"
               >
-                View All Courses
-              </Link>
-              <Link href="/login" style={{ borderRadius: "4px" }} className="text-blue-600 hover:text-blue-800 hover:bg-gray-200 duration-300 px-3 py-2 rounded-md text-sm font-medium">
-                Login
+                Home
               </Link>
               <Link
-                style={{
-                  borderRadius: "4px",
-                }}
-                href="/register"
-                className="text-blue-600 hover:text-blue-800 hover:bg-gray-200 duration-300 px-3 py-2 rounded-md text-sm font-medium"
+                href="https://training.skill.jobs/courses"
+                className="text-blue-600 hover:text-blue-800 px-2 py-2 hover:bg-gray-200 duration-300 rounded-md text-sm font-medium"
               >
-                Register
-              </Link> */}
-              <Link href="https://skill.jobs/contact-us" style={{ borderRadius: "4px" }} className="text-blue-600 hover:text-blue-800 hover:bg-gray-200 duration-300 px-3 py-2 rounded-md text-sm font-medium">
-                Contact Us
+                Courses
+              </Link>
+              <Link
+                href="https://training.skill.jobs/online-course"
+                className="text-blue-600 hover:text-blue-800 px-2 py-2 hover:bg-gray-200 duration-300 rounded-md text-sm font-medium"
+              >
+                Online Courses
+              </Link>
+              <Link
+                href="https://training.skill.jobs/program/workshop"
+                className="text-blue-600 hover:text-blue-800 px-2 py-2 hover:bg-gray-200 duration-300 rounded-md text-sm font-medium"
+              >
+                Workshop
+              </Link>
+              <Link
+                href="https://training.skill.jobs/program/free-class"
+                className="text-blue-600 hover:text-blue-800 px-2 py-2 hover:bg-gray-200 duration-300 rounded-md text-sm font-medium"
+              >
+                Free Class
+              </Link>
+              <Link
+                href="https://training.skill.jobs/program/events"
+                className="text-blue-600 hover:text-blue-800 px-2 py-2 hover:bg-gray-200 duration-300 rounded-md text-sm font-medium"
+              >
+                Events
+              </Link>
+              <Link
+                href="https://training.skill.jobs/program/short-course"
+                className="text-blue-600 hover:text-blue-800 px-2 py-2 hover:bg-gray-200 duration-300 rounded-md text-sm font-medium"
+              >
+                Short Course
+              </Link>
+              <Link
+                href="https://skill.jobs/contact-us"
+                className="text-blue-600 hover:text-blue-800 px-2 py-2 hover:bg-gray-200 duration-300 rounded-md text-sm font-medium"
+              >
+                Contact
+              </Link>
+              <Link
+                href="https://skill.jobs/"
+                className="text-blue-600 hover:text-blue-800 px-2 py-2 hover:bg-gray-200 duration-300 rounded-md text-sm font-medium"
+              >
+                Back to Skill Jobs
               </Link>
             </div>
           </div>
@@ -97,17 +127,32 @@ export function Navbar() {
               </Button>
             </div>
             <div className="space-y-4">
-              {/* <Link href="/courses" className="block text-blue-600 hover:text-blue-800 px-3 py-2 rounded-md text-base font-medium">
-                View All Courses
+              <Link href="https://training.skill.jobs" className="block text-blue-600 hover:text-blue-800 px-3 py-2 rounded-md text-base font-medium">
+                Home
               </Link>
-              <Link href="/login" className="block text-blue-600 hover:text-blue-800 px-3 py-2 rounded-md text-base font-medium">
-                Login
+              <Link href="https://training.skill.jobs/courses" className="block text-blue-600 hover:text-blue-800 px-3 py-2 rounded-md text-base font-medium">
+                Courses
               </Link>
-              <Link href="/register" className="block text-blue-600 hover:text-blue-800 px-3 py-2 rounded-md text-base font-medium">
-                Register
-              </Link> */}
+              <Link href="https://training.skill.jobs/online-course" className="block text-blue-600 hover:text-blue-800 px-3 py-2 rounded-md text-base font-medium">
+                Online Courses
+              </Link>
+              <Link href="https://training.skill.jobs/program/workshop" className="block text-blue-600 hover:text-blue-800 px-3 py-2 rounded-md text-base font-medium">
+                Workshop
+              </Link>
+              <Link href="https://training.skill.jobs/program/free-class" className="block text-blue-600 hover:text-blue-800 px-3 py-2 rounded-md text-base font-medium">
+                Free Class
+              </Link>
+              <Link href="https://training.skill.jobs/program/events" className="block text-blue-600 hover:text-blue-800 px-3 py-2 rounded-md text-base font-medium">
+                Events
+              </Link>
+              <Link href="https://training.skill.jobs/program/short-course" className="block text-blue-600 hover:text-blue-800 px-3 py-2 rounded-md text-base font-medium">
+                Short Course
+              </Link>
               <Link href="https://skill.jobs/contact-us" className="block text-blue-600 hover:text-blue-800 px-3 py-2 rounded-md text-base font-medium">
-                Contact Us
+                Contact
+              </Link>
+              <Link href="https://skill.jobs/" className="block text-blue-600 hover:text-blue-800 px-3 py-2 rounded-md text-base font-medium">
+                Back to Skill Jobs
               </Link>
             </div>
           </div>
