@@ -33,7 +33,7 @@ export default function HeroSection() {
         <div className="w-full max-w-7xl mx-auto px-4  relative -top-14">
           <div className="text-center max-w-5xl mx-auto">
             <h1 style={{ lineHeight: "1.2" }} className="text-4xl sm:text-5xl md:text-[3.1rem] font-bold text-navy-900 mb-6">
-              Data Science and Machine Learning Zero to Mastery (27th Batch)
+              Data Science and Machine Learning Zero to Mastery (28th Batch)
             </h1>
             <p className={`text-lg text-gray-600 mb-8 max-w-2xl mx-auto ${anekBangla.className}`}>দেশের সবচেয়ে বড় ডাটা সায়েন্স ও মেশিন লার্নিং কোর্সটি এখন Skill Jobs-এ, যা একদম বিগিনারদের জন্য সাজানো হয়েছে। এখানে আপনি জয়েন করতে পারবেন কোনো কোডিং নলেজ ছাড়াই!</p>
             <button
