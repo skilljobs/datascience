@@ -54,7 +54,7 @@ export default function HeroSection() {
                   </clipPath>
                 </defs>
               </svg>
-              ২৭তম ব্যাচ এ Enroll করুন
+              ২৮তম ব্যাচ এ Enroll করুন
             </button>
           </div>
 
