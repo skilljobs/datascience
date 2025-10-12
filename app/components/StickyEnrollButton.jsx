@@ -56,7 +56,7 @@ export default function EnrollPage() {
 
             {/* 4. Tally iframe */}
             <iframe
-              data-tally-src="https://tally.so/embed/nPLQ0e?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+              data-tally-src="https://docs.google.com/forms/d/e/1FAIpQLSdOlv56wKMiIKdnU756jJBkPATZKhYo-zGXHcp7MoYjkWH_MQ/viewform"
               width="100%"
               height="600"
               frameBorder="0"
