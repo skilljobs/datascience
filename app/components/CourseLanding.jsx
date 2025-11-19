@@ -29,8 +29,8 @@ export default function CourseLanding() {
       <div className="w-full max-w-6xl mx-auto bg-gradient-to-r from-blue-50 to-blue-100 rounded-3xl py-16 px-12 shadow-xl">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
           {[
-            { number: "৩৫ টি", label: "লাইভ ক্লাস" },
-            { number: "৭৫", label: "ঘন্টা সেশন লার্ন" },
+            { number: "৪০ টি", label: "লাইভ ক্লাস" },
+            { number: "৮০", label: "ঘন্টা সেশন লার্ন" },
             { number: "💪", label: "হ্যান্ডস-অন প্রজেক্ট (৪ টি)" },
             { number: "🎓", label: "ইন্টার্নশীপ সাপোর্ট " },
             { number: "✓", label: "জব প্লেসমেন্ট সাপোর্ট" },
@@ -53,7 +53,7 @@ export default function CourseLanding() {
                 <Calendar className="w-5 h-5 font-medium text-blue-600" />
                 <div className="space-y-1">
                   <div className={`text-lg text-blue-600 font-bold ${anekBangla.className}`}>কোর্সটি শুরু:</div>
-                  <div className="font-medium">২০ অক্টোবর, ২০২৫ ইং</div>
+                  <div className="font-medium">২৫ ডিসেম্বর, ২০২৫ ইং</div>
                 </div>
               </div>
               <div className="w-[2px]  h-10 hidden lg:block bg-gray-200"></div>
@@ -62,7 +62,7 @@ export default function CourseLanding() {
                 <div className="space-y-1">
                   <div className="text-lg text-blue-600 font-bold">লাইভ ক্লাস</div>
                   <div className="font-medium">
-                    রাত ১০ঃ০০ - ১২ঃ০০ <span className="text-gray-500">( রবিবার, মঙ্গলবার, বৃহঃস্পতিবার )</span>
+                    রাত ১০ঃ০০ - ১২ঃ০০ <span className="text-gray-500">( শনিবার, সোমবার, বুধবার )</span>
                   </div>
                 </div>
               </div>
@@ -72,7 +72,7 @@ export default function CourseLanding() {
                 <ClockAlert className="w-5 h-5 font-medium text-blue-600" />
                 <div className="space-y-1">
                   <div className="text-lg text-blue-600 font-bold"> কোর্স শেষ:</div>
-                  <div className="font-medium">২০ ডিসেম্বর, ২০২৫ইং</div>
+                  <div className="font-medium">২৫ এপ্রিল, ২০২৬ইং</div>
                 </div>
               </div>
               {/* Class Timing Section */}
