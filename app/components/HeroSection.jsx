@@ -87,7 +87,7 @@ export default function HeroSection() {
 
             {/* Tally iframe */}
             <iframe
-              data-tally-src="https://docs.google.com/forms/d/e/1FAIpQLSdOlv56wKMiIKdnU756jJBkPATZKhYo-zGXHcp7MoYjkWH_MQ/viewform"
+              data-tally-src="https://docs.google.com/forms/d/e/1FAIpQLSe3LUnXjea_VRzvWmkOYoMenjEbzshsREBcOF8BqZSPwEM9ew/viewform"
               width="100%"
               height="600"
               frameBorder="0"
