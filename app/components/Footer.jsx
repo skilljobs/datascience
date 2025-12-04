@@ -18,7 +18,7 @@ const legalLinks = [
 const helpCenter = [
   {
     address: "DT4, 102/1 Shukrabad, Mirpur Road, Dhanmondi, Dhaka-1207",
-    cell: ["+880 184-733-4766", "+880 184-702-7537"],
+    cell: ["+880 1999-043556", "+880 1847-334825"],
     email: "contact@skill.jobs",
   },
 ];
