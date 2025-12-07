@@ -7,12 +7,12 @@ const anekBangla = Anek_Bangla({
 const features = [
   {
     icon: "/ben/4month.png",
-    title: "১০৫ দিনের স্টাডি প্ল্যান ",
+    title: "১২০ দিনের স্টাডি প্ল্যান ",
     description: "একদম বিগিনার লেভেল থেকেই আপডেটেড কারিকুলাম",
   },
   {
     icon: "/ben/35.png",
-    title: "৩৫ টি লাইভ ক্লাস",
+    title: "৪০ টি লাইভ ক্লাস",
     description: "ইন্ডাস্ট্রি এক্সপার্টদের কাছে শিখুন লাইভে",
   },
   {
