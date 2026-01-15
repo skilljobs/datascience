@@ -53,7 +53,7 @@ export default function CourseLanding() {
                 <Calendar className="w-5 h-5 font-medium text-blue-600" />
                 <div className="space-y-1">
                   <div className={`text-lg text-blue-600 font-bold ${anekBangla.className}`}>কোর্সটি শুরু:</div>
-                  <div className="font-medium">২৫ ডিসেম্বর, ২০২৫ ইং</div>
+                  <div className="font-medium">১৫ ফেব্রুয়ারী ২০২৬ ইং</div>
                 </div>
               </div>
               <div className="w-[2px]  h-10 hidden lg:block bg-gray-200"></div>
@@ -72,7 +72,7 @@ export default function CourseLanding() {
                 <ClockAlert className="w-5 h-5 font-medium text-blue-600" />
                 <div className="space-y-1">
                   <div className="text-lg text-blue-600 font-bold"> কোর্স শেষ:</div>
-                  <div className="font-medium">২৫ এপ্রিল, ২০২৬ইং</div>
+                  <div className="font-medium">১০ জুন, ২০২৬ইং</div>
                 </div>
               </div>
               {/* Class Timing Section */}
